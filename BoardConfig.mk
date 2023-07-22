@@ -4,6 +4,7 @@ TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_VARIANT := cortex-a76
 
 # Kernel
+TARGET_PREBUILT_KERNEL := device/motorola/ibiza/prebuilt/kernel
 BOARD_BOOT_HEADER_VERSION := 3
 
 # AB

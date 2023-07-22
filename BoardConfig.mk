@@ -1,7 +1,8 @@
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a
 TARGET_CPU_ABI := arm64-v8a
-TARGET_CPU_VARIANT := cortex-a76
+TARGET_CPU_VARIANT := generic
+TARGET_CPU_VARIANT_RUNTIME := kryo
 
 # Kernel
 TARGET_PREBUILT_KERNEL := device/motorola/ibiza/prebuilt/kernel

@@ -9,17 +9,8 @@ TARGET_PREBUILT_KERNEL := device/motorola/ibiza/prebuilt/kernel
 BOARD_BOOT_HEADER_VERSION := 3
 
 # AB
-AB_OTA_UPDATER := true
-AB_OTA_PARTITIONS += \
-    vendor_boot \
-    boot
-
 TARGET_NO_RECOVERY := true
 BOARD_USES_RECOVERY_AS_BOOT := true
 
-# Partition Info
+# Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x5dc0000
-
-# TWRP
-TARGET_SCREEN_WIDTH := 720
-TARGET_SCREEN_HEIGHT := 1600

@@ -7,6 +7,7 @@ TARGET_CPU_VARIANT_RUNTIME := kryo
 # Kernel
 TARGET_PREBUILT_KERNEL := device/motorola/ibiza/prebuilt/kernel
 BOARD_BOOT_HEADER_VERSION := 3
+BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
 # AB
 TARGET_NO_RECOVERY := true

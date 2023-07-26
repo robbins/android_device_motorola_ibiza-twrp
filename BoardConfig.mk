@@ -32,6 +32,10 @@ BOARD_RAMDISK_OFFSET       := 0x01000000
 BOARD_KERNEL_TAGS_OFFSET   := 0x00000100
 BOARD_DTB_OFFSET           := 0x01f00000
 
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += msm_drm.dsi_display0=qcom,mdss_dsi_nt36525c_djn_video: 
+BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 androidboot.usbcontroller=4e00000.dwc3 swiotlb=0 loop.max_part=7
+
 # AB
 TARGET_NO_RECOVERY := true
 BOARD_USES_RECOVERY_AS_BOOT := true

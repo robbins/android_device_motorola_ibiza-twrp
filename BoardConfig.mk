@@ -84,3 +84,5 @@ TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 
 TW_EXCLUDE_DEFAULT_USB_INIT := true
+
+#TW_LOAD_VENDOR_MODULES := "nova_0flash_mmi.ko" currently causes segfaults. Once fixed, can switch to this instead of manually loading the module

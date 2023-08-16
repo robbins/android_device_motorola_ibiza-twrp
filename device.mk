@@ -5,10 +5,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
 PRODUCT_PLATFORM := sm4350
 
-# fastbootd
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
-    fastbootd
+    fastbootd \
+    qcom_decrypt \
+    qcom_decrypt_fbe
 
 # A/B
 AB_OTA_UPDATER := true

@@ -89,3 +89,7 @@ TW_INCLUDE_LIBRESETPROP := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 
 #TW_LOAD_VENDOR_MODULES := "nova_0flash_mmi.ko" currently causes segfaults. Once fixed, can switch to this instead of manually loading the module
+
+# Crypto
+TW_INCLUDE_CRYPTO := true
+BOARD_USES_QCOM_FBE_DECRYPTION := true

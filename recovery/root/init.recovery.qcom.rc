@@ -9,3 +9,7 @@ on fs
 
 on boot
     insmod /vendor/lib/modules/1.1/nova_0flash_mmi.ko
+    start health-hal-2-1
+
+on post-fs
+    start boot-hal-1-1
